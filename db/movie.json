@@ -1,0 +1,10 @@
+{
+    "movie": [
+        {
+            "name": "Home Alone 2",
+            "genre": "Comedy",
+            "releaseDate": "November 20, 2018",
+            "description": "Kevin McCallister finds himself lost in New York with the Sticky Bandits."
+        }
+    ]
+  }
