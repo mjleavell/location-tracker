@@ -1,10 +1,10 @@
 {
     "movie": [
         {
-            "name": "Home Alone 2",
+            "name": "Not, Not Home Alone",
             "genre": "Comedy",
-            "releaseDate": "November 20, 2018",
-            "description": "Kevin McCallister finds himself lost in New York with the Sticky Bandits."
+            "releaseDate": "December 1, 2018",
+            "description": "A boy named, Kevin, may or may not get lost in New York."
         }
     ]
   }
