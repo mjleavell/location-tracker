@@ -6,8 +6,8 @@ const printLocations = (locationsArray) => {
         domString += `<h4>${locations.name}</h>`
         domString += `</div>`
         domString += `<div class="card-body">`
-        domString += `<img class="location-img" width="80%" src="${locations.imageUrl}" alt="${locations.name}">`
-        domString += `<h6 class="card-text">Address: ${locations.address}</h6>`
+        domString += `<img class="location-img" style="width:80%; height:10.75rem;" src="${locations.imageUrl}" alt="${locations.name}">`
+        domString += `<h6 class="card-text py-2">Address: ${locations.address}</h6>`
         domString += `</div>`
         domString += `<div class="card-footer">`
         domString += `<h6>${locations.shootTime}</h6>`

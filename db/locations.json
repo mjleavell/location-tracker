@@ -14,7 +14,7 @@
         },
         {
             "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Chicago_Airport_-_ND0_5470.jpg/330px-Chicago_Airport_-_ND0_5470.jpg",
-            "name": "Chicago O'Hare International Airport",
+            "name": "O'Hare International Airport",
             "address": "10000 West O'Hare Ave, Chicago, IL",
             "shootTime": "Morning"
         },
@@ -23,6 +23,19 @@
             "name": "Rockefeller Center",
             "address": "45 Rockefeller Plaza, New York, NY",
             "shootTime": "After Dark"
+        },
+        {
+            "imageUrl": "https://cdn-images-1.medium.com/max/2000/1*OkGkcPCQ3TO-m4SCkE9NeQ.jpeg",
+            "name": "Gapstow Bridge",
+            "address": "Central Park, NY",
+            "shootTime": "Morning"
+        },
+        {
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Central_Park_Wollman_Rink.jpg/1024px-Central_Park_Wollman_Rink.jpg",
+            "name": "Wollman Rink",
+            "address": "830 5th Ave, New York, NY",
+            "shootTime": "Afternoon"
         }
     ]
   }
+
