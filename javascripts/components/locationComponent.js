@@ -27,13 +27,4 @@ const printLocations = (locationsArray) => {
     $("#locations").append(domString)
 }
 
-const filterSearchResults = (e) => {
-    const searchInput = $(e.target).val().toLowerCase();
-    if (searchInput) {
-        $('.locations').each((i, location) => {
-            $(location).show();
-        })
-    }
-}
-
-export {getLocations, setLocations, printLocations, filterSearchResults}
+export {getLocations, setLocations, printLocations}
