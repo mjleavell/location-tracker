@@ -17,4 +17,16 @@ const searchEvent = () => {
     })
 };
 
-export { searchEvent };
+const filterButton = (e) => {
+    const buttonId = $(e.target).html();
+    console.log(buttonId)
+    $('.locations').not(`:icontains(${buttonId})`).hide();
+    $(`.locations:icontains(${buttonId})`).show();
+}
+
+const buttonEvent = () => {
+    $(".btn").on('click', (e) => {
+        filterButton(e)
+    })
+}
+export { searchEvent, buttonEvent };
