@@ -1,7 +1,8 @@
-import { searchEvent } from "./events.js";
+import { searchEvent, buttonEvent } from "./events.js";
 
 const initApp = () => {
     searchEvent();
+    buttonEvent();
 }
 
 initApp();

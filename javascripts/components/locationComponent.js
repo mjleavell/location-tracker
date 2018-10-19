@@ -20,7 +20,7 @@ const printLocations = (locationsArray) => {
         domString += `<h6 class="card-text address py-2">Address: ${locations.address}</h6>`
         domString += `</div>`
         domString += `<div class="card-footer">`
-        domString += `<h6>${locations.shootTime}</h6>`
+        domString += `<h6 class="shoot-time">${locations.shootTime}</h6>`
         domString += `</div>`
         domString += `</div>`
     })
