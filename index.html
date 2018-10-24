@@ -13,7 +13,10 @@
 
 <body>
     <h1 class="m-3">Location Tracker</h1>
-    <div class="col my-auto">
+    <div class="row">
+        <div id="movie" class="card-deck mx-auto"></div>
+    </div>
+    <div class="col m-2">
         <div class="row d-flex justify-content-center" id="search">
             <input type="search" class="form-control col-5 mx-auto mt-2" id="search-bar" placeholder="Search">
         </div>
@@ -24,10 +27,6 @@
             <button type="button" id="after-dark" class="btn btn-secondary d-block m-2">After Dark</button>
         </div>
     </div>
-    <div class="col">
-        <div id="movie"></div>
-    </div>
-
     <div id="locations" class="row justify-content-center m-1 mb-4"></div>
     <!-- Script Tags -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
