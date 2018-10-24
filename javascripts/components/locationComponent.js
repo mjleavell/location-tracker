@@ -1,13 +1,3 @@
-let locations = [];
-
-const setLocations = (newArray) => {
-    locations = newArray;
-}
-
-const getLocations = () => {
-    return locations;
-}
-
 const printLocations = (locationsArray) => {
     let domString = '';
     locationsArray.forEach((locations) => {
@@ -17,7 +7,7 @@ const printLocations = (locationsArray) => {
         domString += `</div>`
         domString += `<div class="card-body">`
         domString += `<img class="location-img" style="width:80%; height:10.75rem;" src="${locations.imageUrl}" alt="${locations.name}">`
-        domString += `<h6 class="card-text address py-2">Address: ${locations.address}</h6>`
+        domString += `<h6 class="card-text address py-2">${locations.address}</h6>`
         domString += `</div>`
         domString += `<div class="card-footer">`
         domString += `<h6 class="shoot-time">${locations.shootTime}</h6>`
@@ -27,4 +17,4 @@ const printLocations = (locationsArray) => {
     $("#locations").append(domString)
 }
 
-export {getLocations, setLocations, printLocations}
+export {printLocations}
