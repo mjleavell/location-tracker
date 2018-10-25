@@ -18,6 +18,7 @@ const printMovie = (movieArray) => {
 
 const initialPageView = () => {
     loadMovies().then((movies) => {
+        console.log(movies)
         printMovie(movies)
         bindEvents()
     }).catch((error) => {
