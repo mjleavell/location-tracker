@@ -1,3 +1,5 @@
+import { loadLocations } from "../data/locationData.js";
+
 const printLocations = (locationsArray) => {
     let domString = '';
     locationsArray.forEach((locations) => {
@@ -17,4 +19,13 @@ const printLocations = (locationsArray) => {
     $("#locations").append(domString)
 }
 
-export {printLocations}
+const initialLocationView = () => {
+    loadLocations().then((locations) => {
+        printLocations(locations)
+        console.log(locations)
+    }).catch((error) => {
+        console.log('error on initialLocations', error)
+    })
+}
+
+export {printLocations, initialLocationView}
