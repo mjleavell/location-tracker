@@ -1,41 +1,67 @@
 {
     "locations": [
         {
+            "id": "location1",
             "imageUrl": "https://1.bp.blogspot.com/-Hbqi6DhhLpI/TwUlGjTUgBI/AAAAAAAAMds/Sq5lbQbeyiU/s1600/House+1.JPG",
             "name": "McCallister House",
             "address": "671 Lincoln Ave, Winnetka, IL",
             "shootTime": "Evening"
         },
         {
+            "id": "location2",
             "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iXhenASVIGng/v1/800x-1.jpg",
             "name": "Plaza Hotel",
             "address": "768 5th Ave, New York, NY",
             "shootTime": "Afternoon"
         },
         {
+            "id": "location3",
             "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Chicago_Airport_-_ND0_5470.jpg/330px-Chicago_Airport_-_ND0_5470.jpg",
             "name": "O'Hare International Airport",
             "address": "10000 West O'Hare Ave, Chicago, IL",
             "shootTime": "Morning"
         },
         {
+            "id": "location4",
             "imageUrl": "https://cdn.vox-cdn.com/thumbor/G1SQN6qB0LrGw8Lqku4Cpmi332s=/0x0:4193x2797/1200x800/filters:focal(1762x1064:2432x1734)/cdn.vox-cdn.com/uploads/chorus_image/image/52345097/Rockefeller_Center_tree.0.jpeg",
             "name": "Rockefeller Center",
             "address": "45 Rockefeller Plaza, New York, NY",
             "shootTime": "After Dark"
         },
         {
+            "id": "location5",
             "imageUrl": "https://cdn-images-1.medium.com/max/2000/1*OkGkcPCQ3TO-m4SCkE9NeQ.jpeg",
-            "name": "Gapstow Bridge",
-            "address": "Central Park, NY",
+            "name": "Central Park",
+            "address": "14 East 60th St, New York, NY",
             "shootTime": "Morning"
         },
         {
+            "id": "location6",
             "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Central_Park_Wollman_Rink.jpg/1024px-Central_Park_Wollman_Rink.jpg",
             "name": "Wollman Rink",
             "address": "830 5th Ave, New York, NY",
             "shootTime": "Afternoon"
+        },
+        {
+            "id": "location7",
+            "imageUrl": "http://vodzilla.co/wp-content/uploads/2015/11/elf-candy-cane-forest.jpg",
+            "name": "Candy Cane Forest",
+            "address": "North Pole",
+            "shootTime": "After Dark"
+        },
+        {
+            "id": "location8",
+            "imageUrl": "https://liveindex.org/wp-content/uploads/2016/08/US_Empire_State_Building-640x480_c.jpg",
+            "name": "Empire State Building",
+            "address": "830 5th Ave, New York, NY",
+            "shootTime": "Morning"
+        },
+        {
+            "id": "location9",
+            "imageUrl": "https://s3.amazonaws.com/Website_UMCom/FACImages/FAC48362.jpg",
+            "name": "Trinity United Methodist",
+            "address": "1024 West Lake Ave, Wilmette, IL",
+            "shootTime": "Evening"
         }
     ]
   }
-

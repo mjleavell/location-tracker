@@ -1,10 +1,9 @@
-import { printLocations, setLocations, getLocations } from "../components/locationComponent.js";
+import { printLocations } from "../components/locationComponent.js";
 
 // Load Location Data
 $.get("../../db/locations.json")
   .done(data => {
-    setLocations(data.locations);
-    printLocations(getLocations());
+    printLocations(data.locations);
   })
   .fail(error => {
     console.log(error);

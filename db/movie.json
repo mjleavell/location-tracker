@@ -1,10 +1,28 @@
 {
     "movie": [
         {
-            "name": "Not, Not Home Alone",
+            "id": "movie1",
+            "name": "Home Alone",
             "genre": "Comedy",
             "releaseDate": "December 1, 2018",
-            "description": "A boy named, Kevin, may or may not get lost in New York."
+            "description": "Kevin McCallister is mistakenly left behind when his family flies to Paris for their Christmas vacation. Kevin initially relishes being home alone, but he soon has to contend with two burglars known as the Wet Bandits.",
+            "locations": "[location1, location3, location9]"
+        },
+        {
+            "id": "movie2",
+            "name": "Home Alone 2",
+            "genre": "Comedy",
+            "releaseDate": "December 1, 2019",
+            "description": "Kevin and his family decide to take a trip to Florida, but Kevin takes the wrong plane and ends up in New York. He is soon confronted by the Sticky Bandits and must outrun and out-prank them again.",
+            "locations": "[location1, location2, location3, location4, location5, location6]"
+        },
+        {
+            "id": "movie2",
+            "name": "Elf",
+            "genre": "Comedy",
+            "releaseDate": "December 15, 2018",
+            "description": "One of Santa's elves who learns he is actually a human and goes to New York City to meet his biological father, spreading Christmas cheer in a world of cynics as he goes.",
+            "locations": "[location4, location5, location7, location8]"
         }
     ]
   }

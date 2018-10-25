@@ -5,8 +5,8 @@ jQuery.expr[':'].icontains = function (obj,index,meta) {
 
 const filterSearchResults = (e) => {
     const searchInput = $(e.target).val();
-    $('.locations').not(`:icontains(${searchInput})`).hide();
-    $(`.locations:icontains(${searchInput})`).show();
+    $('.card-header').not(`:icontains(${searchInput})`).closest('.locations').hide();
+    $(`.card-header:icontains(${searchInput})`).closest('.locations').show();
 }
 
 const searchEvent = () => {
