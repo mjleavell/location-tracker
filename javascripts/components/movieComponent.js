@@ -1,3 +1,6 @@
+import { loadMovies } from "../data/movieData.js";
+import { bindEvents } from "../events.js";
+
 const printMovie = (movieArray) => {
     let domString = '';
     movieArray.forEach((movie) => {
@@ -13,4 +16,13 @@ const printMovie = (movieArray) => {
     $("#movie").append(domString);
 }
 
-export { printMovie }
+const initialPageView = () => {
+    loadMovies().then((movies) => {
+        printMovie(movies)
+        bindEvents()
+    }).catch((error) => {
+        console.log('error on initialPageView', error)
+    })
+}
+
+export { initialPageView }

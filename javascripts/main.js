@@ -1,8 +1,7 @@
-import { searchEvent, buttonEvent } from "./events.js";
+import { initialPageView } from "./components/movieComponent.js";
 
 const initApp = () => {
-    searchEvent();
-    buttonEvent();
+    initialPageView();
 }
 
 initApp();

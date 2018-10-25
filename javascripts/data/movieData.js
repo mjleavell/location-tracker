@@ -1,11 +1,15 @@
-import { printMovie } from "../components/movieComponent.js";
-
 // Load Movie Data
-$.get("../../db/movie.json")
-  .done(data => {
-    console.log(data.movie);
-    printMovie(data.movie);
+const loadMovies = () => {
+  return new Promise((resolve, reject) => {
+    $.get("../../db/movie.json")
+    .done(data => {
+      resolve(data.movie);
+      console.log(data.movie)
+    })
+    .fail(error => {
+      reject(error);
+    });
   })
-  .fail(error => {
-    console.log(error);
-  });
+}
+
+export {loadMovies}
