@@ -19,7 +19,7 @@ const printLocations = (locationsArray) => {
     $("#locations").append(domString)
 }
 
-const initialLocations = () => {
+const initialLocationView = () => {
     loadLocations().then((locations) => {
         printLocations(locations)
         console.log(locations)
@@ -28,4 +28,4 @@ const initialLocations = () => {
     })
 }
 
-export {printLocations, initialLocations}
+export {printLocations, initialLocationView}
