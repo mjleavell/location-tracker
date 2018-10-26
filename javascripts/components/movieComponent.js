@@ -5,7 +5,7 @@ import { loadLocations } from "../data/locationData.js";
 const writeMovie = (movieArray) => {
     let domString = '';
     movieArray.forEach((movie) => {
-        domString += `<div id="${movie.id}" class="card movie d-flex m-2 bg-light" style="width: 25rem;">`
+        domString += `<div id="${movie.id}" class="card card-movie d-flex m-2 bg-light" style="width: 25rem;">`
         domString += `<div class="card-body">`
         domString += `<h5 class="card-title text-center">${movie.name}</h5>`
         domString += `<hr>`
