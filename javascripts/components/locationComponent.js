@@ -1,9 +1,9 @@
 import { loadLocations } from "../data/locationData.js";
 
-const printLocations = (locationsArray) => {
+const writeLocations = (locationsArray) => {
     let domString = '';
     locationsArray.forEach((locations) => {
-        domString += `<div class="card locations flex-row-wrap text-center m-3" style="width: 23rem;">`
+        domString += `<div id="${locations.id}" class="card locations flex-row-wrap text-center m-3" style="width: 23rem;">`
         domString += `<div class="card-header">`
         domString += `<h4 class="location-name">${locations.name}</h>`
         domString += `</div>`
@@ -21,11 +21,11 @@ const printLocations = (locationsArray) => {
 
 const initialLocationView = () => {
     loadLocations().then((locations) => {
-        printLocations(locations)
+        writeLocations(locations)
         console.log(locations)
     }).catch((error) => {
         console.log('error on initialLocations', error)
     })
 }
 
-export {printLocations, initialLocationView}
+export {initialLocationView}
