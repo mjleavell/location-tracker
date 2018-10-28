@@ -17,7 +17,8 @@ const loadLocationsForMovie = movieLocations => {
   return new Promise((resolve, reject) => {
     $.get("../db/locations.json")
       .done(data => {
-        movieLocations.forEach(movieLocation => {
+        // trying to get the location objects for the movie.locations
+        movieLocations.forEach((movieLocation) => {
           data.locations.forEach((location) => {
             if (location.id === movieLocation) {
               locationsForMovieArr.push(location);

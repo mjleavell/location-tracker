@@ -49,7 +49,7 @@ const movieClickEvent = () => {
     loadMovies().then(movies => {
       return writeSingleMovie(movies, clickedMovieId)
     })
-    })
+  })
 };
 
 export { bindEvents, movieClickEvent };

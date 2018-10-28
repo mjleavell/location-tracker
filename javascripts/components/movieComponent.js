@@ -45,7 +45,7 @@ const writeSingleMovie = (moviesArr, clickedMovieId) => {
 
 const singleMovieView = (movieId) => {
     loadMovieLocations(movieId).then((data) => {
-        // data = the movie.locations array for the clicked movie
+        // data is the movie.locations array for the clicked movie
         console.log(data) 
         return loadLocationsForMovie(data)
     }).then((moviesWithLocations) => {

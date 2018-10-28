@@ -1,5 +1,4 @@
 import { loadLocations } from "../data/locationData.js";
-import { loadMovieLocations } from "../data/movieData.js";
 
 const writeLocations = (locationsArray, divId) => {
     let domString = '';
