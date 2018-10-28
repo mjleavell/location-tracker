@@ -17,7 +17,7 @@
             "locations": "[location1, location2, location3, location4, location5, location6]"
         },
         {
-            "id": "movie2",
+            "id": "movie3",
             "name": "Elf",
             "genre": "Comedy",
             "releaseDate": "December 15, 2018",

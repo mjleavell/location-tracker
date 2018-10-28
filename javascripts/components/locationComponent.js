@@ -1,6 +1,7 @@
 import { loadLocations } from "../data/locationData.js";
+import { loadMovieLocations } from "../data/movieData.js";
 
-const writeLocations = (locationsArray) => {
+const writeLocations = (locationsArray, divId) => {
     let domString = '';
     locationsArray.forEach((locations) => {
         domString += `<div id="${locations.id}" class="card locations flex-row-wrap text-center m-3" style="width: 23rem;">`
@@ -16,15 +17,14 @@ const writeLocations = (locationsArray) => {
         domString += `</div>`
         domString += `</div>`
     })
-    $("#locations").append(domString)
+    $(divId).append(domString)
 }
 
 const initialLocationView = () => {
     loadLocations().then((locations) => {
-        writeLocations(locations)
-        console.log(locations)
+        writeLocations(locations, "#locations")
     }).catch((error) => {
-        console.log('error on initialLocations', error)
+        console.log('error on initialLocationsView', error)
     })
 }
 
