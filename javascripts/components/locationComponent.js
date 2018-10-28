@@ -27,4 +27,4 @@ const initialLocationView = () => {
     })
 }
 
-export {initialLocationView}
+export {initialLocationView, writeLocations}

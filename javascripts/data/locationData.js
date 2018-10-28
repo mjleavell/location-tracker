@@ -25,7 +25,6 @@ const loadLocationsForMovie = movieLocations => {
             }
           });
         });
-        console.log(locationsForMovieArr);
         resolve(locationsForMovieArr);
       })
       .fail(error => {

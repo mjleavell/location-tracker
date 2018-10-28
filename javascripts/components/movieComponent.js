@@ -1,6 +1,7 @@
 import { loadMovies, loadMovieLocations } from "../data/movieData.js";
 import { loadLocationsForMovie } from "../data/locationData.js";
 import { bindEvents, movieClickEvent } from "../events.js";
+import { writeLocations } from "./locationComponent.js";
 
 const writeMovie = (movieArray) => {
     let domString = '';
@@ -11,9 +12,7 @@ const writeMovie = (movieArray) => {
         domString += `<hr>`
         domString += `<p class="card-subtitle mb-2 text-dark text-center">Genre: ${movie.genre}</p>`
         domString += `<p class="card-subtitle mb-2 text-dark text-center">Release Date: ${movie.releaseDate}</p>`
-    // PRINTS LOCATIONS TWICE. DIVIDING BY 11 GIVES ME THE RIGHT NUMBER OF LOCATIONS
-    // DEFINITELY A BETTER WAY TO DO THIS
-        domString += `<p class="card-subtitle text-dark text-center">Number of Locations: ${(movie.locations.length)/11}</p>`
+        domString += `<p class="card-subtitle text-dark text-center">Number of Locations: ${movie.locations.length}</p>`
         domString += `<hr>`
         domString += `<p class="card-text text-justify">${movie.description}</p>`
         domString += `</div>`
@@ -33,7 +32,7 @@ const writeSingleMovie = (moviesArr, clickedMovieId) => {
             domString += `<hr>`
             domString += `<p class="card-subtitle mb-2 text-dark text-center">Genre: ${movie.genre}</p>`
             domString += `<p class="card-subtitle mb-2 text-dark text-center">Release Date: ${movie.releaseDate}</p>`
-            domString += `<p class="card-subtitle text-dark text-center">Number of Locations: ${(movie.locations.length)/11}</p>`
+            domString += `<p class="card-subtitle text-dark text-center">Number of Locations: ${movie.locations.length}</p>`
             domString += `<hr>`
             domString += `<p class="card-text text-justify">${movie.description}</p>`
             domString += `</div>`
@@ -46,10 +45,9 @@ const writeSingleMovie = (moviesArr, clickedMovieId) => {
 const singleMovieView = (movieId) => {
     loadMovieLocations(movieId).then((data) => {
         // data is the movie.locations array for the clicked movie
-        console.log(data) 
         return loadLocationsForMovie(data)
     }).then((moviesWithLocations) => {
-        console.log(moviesWithLocations)
+        writeLocations(moviesWithLocations, "#movie-view-location")
     }).catch((error) => {
         console.log('error on singleMovieView', error)
     })
