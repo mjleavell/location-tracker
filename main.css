@@ -1,0 +1,20 @@
+body {
+    background-color: #eef7ff;
+}
+
+h1 {
+    color: #292b2c;
+}
+
+.card {
+    box-shadow: 0.25rem 0.25rem gray;
+}
+
+.location-img {
+    border: 1px solid black;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}

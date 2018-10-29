@@ -1,6 +1,6 @@
 import { loadMovies, loadMovieLocations } from "../data/movieData.js";
 import { loadLocationsForMovie } from "../data/locationData.js";
-import { bindEvents, movieClickEvent } from "../events.js";
+import { bindEvents, movieClickEvent, backEvent } from "../events.js";
 import { writeLocations } from "./locationComponent.js";
 
 const writeMovie = (movieArray) => {
