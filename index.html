@@ -12,26 +12,27 @@
 </head>
 
 <body>
-    <h1 class="text-center m-3">Location Tracker</h1>
-    <div id="initial-view">
+    <div id="initial-view" class="my-3">
+        <h1 class="text-center mb-2">Movie Location Tracker</h1>
         <div class="row">
             <div id="movie" class="card-deck mx-auto"></div>
         </div>
-        <div class="row d-flex justify-content-center" id="search">
+        <div class="row d-flex justify-content-center mt-4" id="search">
             <input type="search" class="form-control col-5 mx-auto mt-2" id="search-bar" placeholder="Search">
         </div>
-        <div class="row d-flex justify-content-center">
-            <button type="button" id="morning" class="btn btn-secondary d-block m-2">Morning</button>
-            <button type="button" id="afternoon" class="btn btn-secondary d-block m-2">Afternoon</button>
-            <button type="button" id="evening" class="btn btn-secondary d-block m-2">Evening</button>
-            <button type="button" id="after-dark" class="btn btn-secondary d-block m-2">After Dark</button>
-            <button type="button" id="show-all" class="btn btn-secondary d-block m-2">Show All</button>
+        <div class="row d-flex justify-content-center my-3">
+            <button type="button" id="morning" class="btn btn-danger btn-time d-block m-2">Morning</button>
+            <button type="button" id="afternoon" class="btn btn-warning btn-time d-block m-2">Afternoon</button>
+            <button type="button" id="evening" class="btn btn-success btn-time d-block m-2">Evening</button>
+            <button type="button" id="after-dark" class="btn btn-primary btn-time d-block m-2">After Dark</button>
+            <button type="button" id="show-all" class="btn btn-secondary btn-time d-block m-2">Show All</button>
         </div>
         <div id="locations" class="row justify-content-center"></div>
     </div>
-    <div id="movie-view" style="display: none;">
-        <div id="single-movie" class="mx-auto"></div>
-        <div id="movie-view-location" class="row justify-content-center"></div>
+    <div id="movie-view" style="display: none;" class="mb-3">
+        <button type="button" id="btn-back" class="btn btn-secondary m-1">Back to Homepage</button>
+        <div id="single-movie" class="d-flex justify-content-center my-3"></div>
+        <div id="movie-view-location" class="row justify-content-center mb-3"></div>
     </div>
     <!-- Script Tags -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
