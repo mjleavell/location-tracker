@@ -15,13 +15,9 @@ const searchEvent = () => {
   $("#search-bar").on("keyup", e => {
     if (e.keyCode === 13) {
       const searchInput = $(e.target).val();
-      $(".card-header")
-        .not(`:icontains(${searchInput})`)
-        .closest(".locations")
-        .hide();
-      $(`.card-header:icontains(${searchInput})`)
-        .closest(".locations")
-        .show();
+      $(".card-search").not(`:icontains(${searchInput})`).closest(".locations").hide();
+      $(`.card-search:icontains(${searchInput})`).closest(".locations").show();
+      $(e.target).val("");
     }
   });
 };
