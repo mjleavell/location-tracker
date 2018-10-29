@@ -4,10 +4,10 @@ const writeLocations = (locationsArray, divId) => {
     let domString = '';
     locationsArray.forEach((locations) => {
         domString += `<div id="${locations.id}" class="card locations flex-row-wrap text-center m-3" style="width: 23rem;">`
-        domString += `<div class="card-header">`
+        domString += `<div class="card-header card-search">`
         domString += `<h4 class="location-name">${locations.name}</h>`
         domString += `</div>`
-        domString += `<div class="card-body">`
+        domString += `<div class="card-body card-search">`
         domString += `<img class="location-img" style="width:80%; height:10.75rem;" src="${locations.imageUrl}" alt="${locations.name}">`
         domString += `<h6 class="card-text address py-2">${locations.address}</h6>`
         domString += `</div>`
