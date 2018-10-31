@@ -26,13 +26,13 @@ The purpose of this  homework assingment was to introduce us to jQuery and promi
 
 ### Screenshots
 Homepage View
-![screenshot](./screenshots/shot2.png)
-Search by location name or location address
-![search](./screenshots/search.png)
+![screenshot](./screenshots/shot2a.png)
+Search by location name or location address (i.e. 5th)
+![search](./screenshots/search1.png)
 Filter locations by shoot time
-![shoot](./screenshots/shootTime.png)
+![shoot](./screenshots/shootTime2.png)
 Click on movie to see locations
-![singlemovie](./screenshots/singleMovie.png)
+![singlemovie](./screenshots/singleMovie1.png)
 
 ### How to run application
 
