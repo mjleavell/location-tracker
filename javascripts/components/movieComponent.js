@@ -1,12 +1,12 @@
 import { loadMovies, loadMovieLocations } from "../data/movieData.js";
 import { loadLocationsForMovie } from "../data/locationData.js";
-import { bindEvents, movieClickEvent, backEvent } from "../events.js";
-import { writeLocations } from "./locationComponent.js";
+import { bindEvents, movieClickEvent } from "../events.js";
+import { writeLocationsSingleMovie } from "./locationComponent.js";
 
 const writeMovie = (movieArray) => {
     let domString = '';
     movieArray.forEach((movie) => {
-        domString += `<div id="${movie.id}" class="card card-movie d-flex m-2 bg-light" style="width: 25rem;">`
+        domString += `<div id="${movie.id}" class="card card-movie d-flex m-2 bg-light" style="max-width: 28rem;">`
         domString += `<div class="card-body">`
         domString += `<h5 class="card-title text-center">${movie.name}</h5>`
         domString += `<hr>`
@@ -26,7 +26,7 @@ const writeSingleMovie = (moviesArr, clickedMovieId) => {
     let domString = '';
     moviesArr.forEach((movie) => {
         if (movie.id === clickedMovieId){
-            domString += `<div id="${movie.id}" class="card card-movie d-flex m-2 bg-light" style="width: 25rem;">`
+            domString += `<div id="${movie.id}" class="card card-movie d-flex m-2 bg-light" style="max-width: 28rem;">`
             domString += `<div class="card-body">`
             domString += `<h5 class="card-title text-center">${movie.name}</h5>`
             domString += `<hr>`
@@ -47,7 +47,7 @@ const singleMovieView = (movieId) => {
         // data is the movie.locations array for the clicked movie
         return loadLocationsForMovie(data)
     }).then((moviesWithLocations) => {
-        writeLocations(moviesWithLocations, "#movie-view-location")
+        writeLocationsSingleMovie(moviesWithLocations);
     }).catch((error) => {
         console.log('error on singleMovieView', error)
     })

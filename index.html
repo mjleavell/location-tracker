@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <div id="initial-view" class="my-3">
+    <div id="initial-view" class="m-1">
         <h1 class="text-center mb-2">Movie Location Tracker</h1>
         <div class="row">
-            <div id="movie" class="card-deck mx-auto"></div>
+            <div id="movie" class="card-deck d-flex mx-auto"></div>
         </div>
         <div class="row d-flex justify-content-center mt-4" id="search">
-            <input type="search" class="form-control col-5 mx-auto mt-2" id="search-bar" placeholder="Search">
+            <input type="search" class="form-control col-md-5 mx-auto mt-2" id="search-bar" placeholder="Search">
         </div>
         <div class="row d-flex justify-content-center my-3">
             <button type="button" id="morning" class="btn btn-danger btn-time d-block m-2">Morning</button>
@@ -27,9 +27,9 @@
             <button type="button" id="after-dark" class="btn btn-primary btn-time d-block m-2">After Dark</button>
             <button type="button" id="show-all" class="btn btn-secondary btn-time d-block m-2">Show All</button>
         </div>
-        <div id="locations" class="row justify-content-center"></div>
+        <div id="locations" class="row d-flex justify-content-center"></div>
     </div>
-    <div id="movie-view" style="display: none;" class="mb-3">
+    <div id="movie-view" style="display: none;">
         <button type="button" id="btn-back" class="btn btn-secondary m-1">Back to Homepage</button>
         <div id="single-movie" class="d-flex justify-content-center my-3"></div>
         <div id="movie-view-location" class="row justify-content-center mb-3"></div>
